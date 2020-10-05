@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    style
+      include ../public/style.css
+    title Liste de livre
+
+  body
+  h1 Mini-Bibliothèque
+  br
+  br
+  h3 Livres de la catégorie " #{categoryNom} "
+  br
+  br
+  table
+    thead
+      tr
+        th auteur
+        th titre
+        th catégorie
+    tbody
+    each li in list
+      tr
+        td #{li.author}
+        td #{li.title}
+        td #{li.category}
+
+  a(href="/") retour à la page principale

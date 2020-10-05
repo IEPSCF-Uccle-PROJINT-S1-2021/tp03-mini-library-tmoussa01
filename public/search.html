@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>formulaire</title>
+</head>
+<body>
+  <h1>Mini-Bibliothèque</h1>
+  <br>
+  <br>
+<form action="/books/list" method="post">
+  <label for="selection">Choisir catégorie:</label>
+  <span class="custom-dropdown big">
+    <select name="selection" id="selection">
+      <option value="roman historique">roman historique</option>
+      <option value="fantasy">fantasy</option>
+      <option value="autobiographie">autobiographie</option>
+    </select>
+</span>
+  <br>
+  <input class="btn" type="submit" value="Chercher">
+</form>
+</body>
+</html>
